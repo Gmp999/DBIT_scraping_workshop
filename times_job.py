@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 import pandas as pd
 import os
 
-driver1 = webdriver.Chrome(r"C:/Users/swaraj.s/OneDrive - kpisoft Inc/Desktop/chromedriver.exe")
+driver1 = webdriver.Chrome(r"give you own driver path")
 driver1.get('https://www.timesjobs.com/')
 driver1.maximize_window()
 print("opening website ")
