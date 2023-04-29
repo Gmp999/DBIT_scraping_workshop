@@ -33,7 +33,12 @@ while (True):
             print(len(links))
             time.sleep(1)
         next = driver1.find_element(By.XPATH, '//*[@class="nxtC"]')
-        driver1.execute_script("arguments[0].click();", next)
+        # driver1.execute_script("arguments[0].click();", next)
+        if len(links>3):
+            driver1.execute_script("arguments[0].click();", next)
+        else:
+            break
+            
 
     except Exception as ex:
         print(ex)
